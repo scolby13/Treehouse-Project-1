@@ -2,15 +2,28 @@
 * { 
   box-sizing: border-box;
 }
-  
+
 body {
   margin: 0;
   padding: 0;
   text-align: center;
   font-family: 'Roboto', sans-serif;
   color: #222;
-  background: #f7f5f0;
+  background: #233757;
+
 }
+
+.experience-body {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  background:linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(images/experience-background.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+   
+  color: white;
+}
+
 /* Link Styles */
 
 a {
@@ -29,6 +42,14 @@ a:hover {
   min-height: 30px;
   padding: 10px;
   position: fixed;
+  text-align: center;
+}
+
+.experience-nav {
+  width: 100%;
+  background: black;
+  min-height: 30px;
+  padding: 10px;
   text-align: center;
 }
 .nav {
@@ -61,7 +82,6 @@ header {
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
-  background-position: fixed;
   background-attachment: fixed; 
 }
 header {
@@ -72,12 +92,17 @@ header .profile-image {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 3px solid white;
+  border: 3px solid black;
   transition: all .5s;
 }
 header .profile-image:hover {
-  transform: scale(1.2) rotate(5deg);
+  transform: scale(1.2) rotate(360deg);
 }
+
+.experience-heading {
+  text-align: center;
+}
+
 .tag {
   background-color: #efefef;
   color: black;
@@ -90,6 +115,7 @@ header .profile-image:hover {
   background-color: #222;
   color: yellow;
 }
+
 .card {
   margin: 30px;
   padding: 20px 40px 40px;
@@ -101,7 +127,7 @@ header .profile-image:hover {
   transition: all .5s;
 }
 .card:hover {
-  border-color: #ff99ff;
+  border-color: #230fd3;
 }
 
 ul.skills {
@@ -122,6 +148,12 @@ ul.skills {
   background: #0399ff;
 }
 
+
+.footer {
+  background-color: rgb(48, 48, 48);
+  text-align: center;
+}
+
 footer {
   width: 100%;
   min-height: 30px;
@@ -131,6 +163,7 @@ footer {
 footer .copyright {
   top: -8px;
   font-size: .75em;
+  color: white;
 }
 
 footer ul {
@@ -202,7 +235,7 @@ a.social:hover {
   footer {
     font-size: 1.3em;
     max-width: 1200px;
-    margin: 40px auto;
+    margin: 0 auto;
   }
 
 }
